@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% block title %}Contact Us - Online Marketplace{% endblock title %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto px-4 py-10">
+  <h1 class="text-4xl font-bold text-center mb-6">Contact Us</h1>
+  <p class="text-lg text-gray-700 text-center mb-8">
+    Got questions or need support? We're here to help. Reach out to us via the form below or use our contact details.
+  </p>
+
+  <form action="#" method="post" class="space-y-6 bg-white p-6 rounded-xl shadow-md">
+    {% csrf_token %}
+    <div>
+      <label for="name" class="block font-medium text-gray-700">Your Name</label>
+      <input type="text" name="name" id="name" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring focus:outline-none">
+    </div>
+
+    <div>
+      <label for="email" class="block font-medium text-gray-700">Your Email</label>
+      <input type="email" name="email" id="email" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring focus:outline-none">
+    </div>
+
+    <div>
+      <label for="message" class="block font-medium text-gray-700">Your Message</label>
+      <textarea name="message" id="message" rows="5" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring focus:outline-none"></textarea>
+    </div>
+
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+      Send Message
+    </button>
+  </form>
+
+  <div class="mt-10 text-center text-gray-700">
+    <p><strong>Email:</strong> support@onlinemarketplace.com</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Address:</strong> 123 Market Street, Kolkata, India</p>
+  </div>
+</div>
+{% endblock content %}
