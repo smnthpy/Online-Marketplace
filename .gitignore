@@ -1,5 +1,3 @@
-puddle/.env
-env
 puddle\core\__pycache__
 puddle\db.sqlite3
 
