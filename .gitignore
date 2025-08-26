@@ -1,4 +1,4 @@
-env
+puddle/.venv
 puddle\core\__pycache__
 puddle\db.sqlite3
 
